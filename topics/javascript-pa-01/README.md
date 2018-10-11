@@ -1,4 +1,4 @@
-# JavaScript
+# Preadmisión, JavaScript
 
 En un mundo que rápidamente se está digitalizando, aprender a programar abre
 nuevas (y muchas veces mejores) oportunidades. Con este curso darás tus primeros
