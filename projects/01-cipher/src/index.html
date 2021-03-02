@@ -6,9 +6,31 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
+    <main>
+      <!-- Decidí usar todo dentro de un form por si el evento change no se arrojara, pueda lanzarse con el botón -->
+      <section class="container">
+        <header>
+          <h1>Traductor César</h1>
+          <div>
+            <label for="offset">Factor de cambio</label>
+            <input type="number" name="offset" id="offset" value="3">
+          </div>
+          
+        </header>
+        <div>
+          <label for="initial-text">Texto original</label>
+          <textarea name="initial-text" id="initial-text" cols="30" rows="10"></textarea>
+        </div>
+
+        <button id="interchange" type="button">Intercambiar</button>
+        
+        <div>
+          <p>Texto cifrado</p>
+          <textarea name="translated-text" id="translated-text" cols="30" rows="10"></textarea>
+        </div>
+      </section>
+      
+    </main>
     <script src="index.js" type="module"></script>
   </body>
 </html>
