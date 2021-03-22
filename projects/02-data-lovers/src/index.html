@@ -6,7 +6,78 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <main id="root">
+      <header>
+        <h1>Atletas Olímpicos</h1>
+        <nav>
+          <button class="filters-button">Filtros <img src="/icons/settings.svg" height="14" alt="Icono de filtro"> </button>
+          <div class="form-control">
+            <label for="sort"></label>
+            <select name="sort" id="sort">
+              <option value=""></option>
+              <option value="name">Nombre</option>
+              <option value="gender">Género</option>
+              <option value="sport">Deporte</option>
+              <option value="team">País</option>
+              <option value="event">Evento</option>
+              <option value="medal">Medalla</option>
+            </select>
+          </div>
+
+          <div class="form-control">
+            <label for="sort-order"></label>
+            <select name="sort-order" id="sort-order">
+              <option value=""></option>
+              <option value="asc">ASC</option>
+              <option value="desc">DESC</option>
+              
+            </select>
+          </div>
+        </nav>
+        <form id="filters">
+          <div class="form-control">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name">
+          </div>
+          <div class="form-control">
+            <label for="gender">Género</label>
+            <select name="gender" id="gender">
+              <option value=""></option>
+              <option value="M">M</option>
+              <option value="F">F</option>
+            </select>
+          </div>
+          <div class="form-control">
+            <label for="sport">Deporte</label>
+            <input type="text" name="sport" id="sport">
+          </div>
+          <div class="form-control">
+            <label for="team">País</label>
+            <input type="text" name="team" id="team">
+          </div>
+          <div class="form-control">
+            <label for="event">Evento</label>
+            <input type="text" name="event" id="event">
+          </div>
+          <div class="form-control">
+            <label for="medal">Medalla</label>
+            <select name="medal" id="medal">
+              <option value=""></option>
+              <option value="Gold">Oro</option>
+              <option value="Silver">Plata</option>
+              <option value="Bronze">Bronce</option>              
+            </select>
+          </div>
+          <div class="buttons">
+            <button type="submit" class="main-btn">Aplicar</button>
+            <button type="button" class="close-filters">Cerrar</button>
+          </div>
+        </form>
+      </header>
+      <section id="athletes">
+        
+      </section>
+    </main>
     <script src="main.js" type="module"></script>
   </body>
 </html>
