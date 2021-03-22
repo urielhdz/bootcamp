@@ -23,7 +23,7 @@ const buildUI = (data) => {
         </ul>
       </header>
       <div class='athlete__medal'>
-        <img src='/icons/medals/${athlete.medal.toLowerCase()}.svg'  height='14' />
+        <img src='./icons/medals/${athlete.medal.toLowerCase()}.svg'  height='14' />
         <p>${athlete.medal}</p>
       </div>
     `;
