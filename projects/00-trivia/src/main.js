@@ -1,3 +1,0 @@
-/*
-  Aquí va tu JavaScript
-*/
