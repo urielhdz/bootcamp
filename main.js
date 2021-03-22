@@ -65,7 +65,7 @@ const setEvents = (data) => {
 };
 
 const init = async () => {
-  const response = await fetch('/data/athletes/athletes.json');
+  const response = await fetch('./data/athletes/athletes.json');
   const data = await response.json();
   buildUI(data);
   setEvents(data);
