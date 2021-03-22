@@ -7,7 +7,7 @@ const buildUI = (data) => {
   const root = document.querySelector('#athletes');
   root.innerHTML = '';
   const { athletes } = data;
-  athletes.forEach((athlete) => {
+  athletes.forEach((athlete, index) => {
     const node = document.createElement('article');
     node.classList.add('athlete');
     node.innerHTML = `
@@ -15,11 +15,11 @@ const buildUI = (data) => {
       <header>
         <h2>${athlete.name} - <span>${athlete.event}</span></h2>
         <ul>
-          <li>${athlete.team}</li>
-          <li>${athlete.age}</li>
-          <li>${athlete.height}</li>
-          <li>${athlete.weight}</li>
-          <li>${athlete.gender}</li>
+          <li class='team'>${athlete.team}</li>
+          <li class='age'>${athlete.age}</li>
+          <li class='height'>${athlete.height}</li>
+          <li class='weight'>${athlete.weight}</li>
+          <li class='gender'>${athlete.gender}</li>
         </ul>
       </header>
       <div class='athlete__medal'>
@@ -27,6 +27,7 @@ const buildUI = (data) => {
         <p>${athlete.medal}</p>
       </div>
     `;
+    setTimeout(() => node.classList.add('show'), 200 * index);
     root.appendChild(node);
   });
 };
